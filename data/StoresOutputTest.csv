@@ -1,0 +1,47 @@
+{
+"stores": [
+  {
+  	"storeCode": "96f2cf",
+  	  "personCode": "ffdj381",
+  	  "address": {
+  	    "street": "2 Crestwave Dr.",
+  	    "city": "Lincoln",
+  	    "state": "NE",
+  	    "country": "US",
+  	    "zipCode": "68028",
+  	 }
+  },
+  {
+    "storeCode": "8j15181",
+  	  "personCode": "418fg2",
+  	  "address": {
+  	    "street": "Hackberry",
+  	    "city": "Gretna",
+  	    "state": "NE",
+  	    "country": "US",
+  	    "zipCode": "68028",
+  	 }
+  },
+  {
+    "storeCode": "fj5jh91k",
+  	  "personCode": "fi82f9h",
+  	  "address": {
+  	    "street": "Oakview Ave",
+  	    "city": "New York City",
+  	    "state": "NY",
+  	    "country": "US",
+  	    "zipCode": "10184",
+  	 }
+  },
+  {
+    "storeCode": "rjf9149",
+  	  "personCode": "fkh2949g",
+  	  "address": {
+  	    "street": "Mango Way",
+  	    "city": "Omaha",
+  	    "state": "NE",
+  	    "country": "US",
+  	    "zipCode": "60381",
+  	 }
+  }
+ ]}

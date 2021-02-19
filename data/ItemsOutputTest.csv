@@ -1,0 +1,51 @@
+{
+"items": [
+  {
+    "basePrice": 295.95,
+    "itemCode": "475nfq8",
+    "name": "Playstation",
+  },
+  {
+    "basePrice": 2.99,
+    "itemCode": "57j92f9",
+    "name": "Candy",
+  },
+  {
+    "itemCode": "5190fja",
+    "name": "Itunes",
+  },
+  {
+    "itemCode": "795jga7",
+    "name": "Amazon",
+  },
+  {
+    "basePrice": 5.65,
+    "itemCode": "77qfja2",
+    "name": "Puzzle",
+  },
+  {
+    "basePrice": 45.35,
+    "itemCode": "q985jfa",
+    "name": "Animal Crossing",
+  },
+  {
+    "hourlyRate": 32.1,
+    "itemCode": "q8ja985",
+    "name": "Mouse Repair",
+  },
+  {
+    "hourlyRate": 89,
+    "itemCode": "fja9281",
+    "name": "Hoop Rental",
+  },
+  {
+    "annualFee": 15,
+    "itemCode": "8184jff",
+    "name": "ESPN Magazine",
+  },
+  {
+    "annualFee": 50,
+    "itemCode": "fa8501f",
+    "name": "X-Box Live",
+  }
+ ]}

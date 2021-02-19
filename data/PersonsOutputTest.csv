@@ -1,0 +1,49 @@
+{
+"persons": [
+  {
+    "personCode": "348faa",
+    "lastName": "Kostal",
+    "firstName": "James",
+    "address": {
+      "street": "Maple Road",
+      "city": "Cleveland",
+      "state": "OH",
+      "country": "US",
+      "zipCode": "441777",
+    },
+    "emails": [
+      "jaKostal@gmail.com",
+    ]
+  },
+  {
+    "personCode": "87vj11",
+    "lastName": "Andrews",
+    "firstName": "Jaine",
+    "address": {
+      "street": "Sunset St.",
+      "city": "Omaha",
+      "state": "NE",
+      "country": "US",
+      "zipCode": "68205",
+    },
+    "emails": []
+  },
+  {
+    "personCode": "f815jf",
+    "lastName": "Samuelson",
+    "firstName": "Kevin",
+    "address": {
+      "street": "Hackberry",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "zipCode": "71814",
+      },
+      "emails": [
+        "KeSamuelson@gmail.com",
+        "KSam@gmail.com",
+        "SevinKamuelson@gmail.com",
+        "Kman@gmail.com",
+      ]
+    }
+  ]}
