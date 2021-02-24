@@ -3,8 +3,13 @@ package com.mgg;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 /**
  * Program reads in data from .csv file converts it to the appropriate
  * object and outputs data to properly formatted XML/JSON file.
@@ -33,6 +38,7 @@ public class DataConverter {
 		    	Address address = new Address(tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]);
 		    	Store b = new Store(storeCode, managerCode, address);
 		    	stores.add(b);
+		    	System.out.println();
 		    }
 		} catch (FileNotFoundException e) {
 		throw new RuntimeException (e); 
@@ -41,18 +47,25 @@ public class DataConverter {
 	}
 	public static void printFileStores(List<Store> b) {
 		try {
-			PrintWriter p = new File(data/Stores.xml)
+			PrintWriter p = new PrintWriter(new File("data/Stores.xml"));
+			p.println("<Stores>");
+			for (Store s : b) {
+				XStream xstream = new XStream();
+				xstream.alias("store", Store.class);
+				String xmlStore = xstream.toXML(s);
+				p.println(xmlStore);
+			}
+			p.println("</Stores>");
+			p.close();
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException (e);
 		}
-		for (Store s : b ) {
-			
-		}
+		
 	}
 	public static void main(String[] args) {
+		List<Store> stores = loadFileStores();
 		
-		
-		
+		printFileStores(stores);
 	}
 
 }
