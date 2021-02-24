@@ -35,5 +35,9 @@ public class Address {
 		this.country = country;
 	}
 	
+	public void addressToString() {
+		System.out.printf("%s \n%s, %s %s\n%s",street, city, state, zipcode, country);
+	}
+	
 	
 }
