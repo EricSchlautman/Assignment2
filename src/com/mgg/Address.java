@@ -1,27 +1,17 @@
 package com.mgg;
 
+/**
+ * @author Byron Rustrian
+ * @author Eric Schlautman
+ *
+ */
 public class Address {
-	private String street;
-	private String city;
-	private String state;
-	private String zip;
-	private String country;
+	String street;
+	String city;
+	String state;
+	String zipcode;
+	String country;
 	
-	public Address(String street, String city, String state, String zip, String country) {
-		this.street = street;
-		this.city = city;
-		this.state = state;
-		this.zip = zip;
-		this.country = country;
-		
-	}
-	
-	@Override
-	public String toString() {
-		return "Address [street=" + street + ", city=" + city + ", state=" + state + ", zip=" + zip + ", country="
-				+ country + "]";
-	}
-
 	public String getStreet() {
 		return this.street;
 	}
@@ -31,10 +21,23 @@ public class Address {
 	public String getState() {
 		return this.state;
 	}
-	public String getZip() {
-		return this.zip;
+	public String getZipcode() {
+		return this.zipcode;
 	}
 	public String getCountry() {
 		return this.country;
 	}
+	public Address(String street, String city, String state, String zipcode, String country) {
+		this.street = street;
+		this.city = city;
+		this.state = state;
+		this.zipcode = zipcode;
+		this.country = country;
+	}
+	
+	public void addressToString() {
+		System.out.printf("%s \n%s, %s %s\n%s",street, city, state, zipcode, country);
+	}
+	
+	
 }

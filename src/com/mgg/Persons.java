@@ -1,11 +1,49 @@
 package com.mgg;
 
-public class Persons {
+import java.util.List;
 
-	private String personCode;
-	private char status;
-	private Name name;
-	private Address address;
-	//Email Addresses: Bourke has a Java php lecture somewhere where he puts 
-	//email addresses into a set, find what this is about.
+
+/**
+ * @author Byron Rustrian
+ * @author Eric Schlautman
+ *
+ */
+public class Persons {
+	String code;
+	String type;
+	String lastName;
+	String firstName;
+	Address address;
+	List <String> emailAddresses;
+	
+	public String getCode() {
+		return this.code;
+	}
+	public String getType() {
+		return this.type;
+	}
+	public String getLastName() {
+		return this.lastName;
+	}
+	public String getFirstName() {
+		return this.firstName;
+	}
+	public Address getAddress() {
+		return this.address;
+	}
+	public List<String> getEmailAddresses() {
+		return this.emailAddresses;
+	}
+	public Persons(String code, String type, String lastName, String firstName, Address address,
+			       List<String> emailAddresses) {
+		this.code = code;
+		this.type = type;
+		this.lastName = lastName;
+		this.firstName = firstName;
+		this.address = address;
+		this.emailAddresses = emailAddresses;
+	}
+	
+	
+	
 }
